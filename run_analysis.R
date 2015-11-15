@@ -87,8 +87,8 @@ names(selected_data) <- col_names
 
 library(tidyr)
 tidy_data <- selected_data %>% 
-    select(activityType, contains("mean")) %>%
-    gather(subject, average, - activityType)
+    select(activityId, activityType, contains("mean")) %>%
+    gather(features, average, -c(activityId, activityType))
 
 # write tidy data
 write.table(tidy_data, './tidy_data.txt', row.names=FALSE, sep=",")
