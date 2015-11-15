@@ -8,7 +8,7 @@ The analysis script,`run_analysis.R`, performs 5 steps in described in projest r
 2. Selcted columes with mean and std (converted column names to unique and applied dplyr::select() and also included activityId for following process)
 3. Spte 2 out file is then merged with activity_type by activityId (used dylpr::left_join())
 4. Changed variable names with descriptive names by using gsub()
-5. To construct tidy data set, selected activityId, activityType, and variable names contain "mean". This list is then transformed to tidy data set by using tidyr::gather(). This output file contains 4 colums with 247176 rows (too big to view from github window). 
+5. To construct tidy data set, selected activityId, activityType, and variable names contain "mean". This list is then transformed to tidy data set by using tidyr::gather(). This output file contains 4 colums with 247176 rows.
 
 
 ### Columns in output file
